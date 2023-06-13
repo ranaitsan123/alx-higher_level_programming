@@ -2,7 +2,6 @@
 # 6-print_matrix_integer.py
 # AICHA LAHNITE <halaicha300@gmail.com>
 
-
 def print_matrix_integer(matrix=[[]]):
     """Print a matrix of integers."""
     for i in range(len(matrix)):
