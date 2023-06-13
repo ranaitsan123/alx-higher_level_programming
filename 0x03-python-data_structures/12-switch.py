@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#AICHA LAHNITE <halaica300@gmail.com>
 
 a = 89
 b = 10
