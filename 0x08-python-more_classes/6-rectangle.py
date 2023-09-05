@@ -85,19 +85,3 @@ class Rectangle:
         """Print a message for every deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-en D Baraban <375@holbertonschool.com>
-"""Defines a Rectangle class."""
-
-
-class Rectangle:
-    """Represent a rectangle."""
-    passfe_print_list = __import__('0-safe_print_list').safe_print_list
-
-my_list = [1, 2, 3, 4, 5]
-
-nb_print = safe_print_list(my_list, 2)
-print("nb_print: {:d}".format(nb_print))
-nb_print = safe_print_list(my_list, len(my_list))
-print("nb_print: {:d}".format(nb_print))
-nb_print = safe_print_list(my_list, len(my_list) + 2)
-print("nb_print: {:d}".format(nb_print))
