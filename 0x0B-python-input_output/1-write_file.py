@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 # 1-number_of_lines.py
 # AICHA LAHNITE <halaicha300@gmail.com>
-""" File name : 1-number_of_lines.py
-    Use the with statement
-    It is not allowed to import any module
-"""
+"""Defines a file-writing function."""
 
 
-def number_of_lines(filename=""):
-    """number_of_lines: returns the number of lines of a text file:
+def write_file(filename="", text=""):
+    """Write a string to a UTF8 text file.
 
     Args:
-        filename (str): content of the file. Defaults to "".
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
+    Returns:
+        The number of characters written.
     """
-    with open(filename, 'r', encoding='utf-8') as f:
-        return len(f.readlines())
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
