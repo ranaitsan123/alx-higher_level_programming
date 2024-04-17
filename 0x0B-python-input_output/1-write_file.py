@@ -13,5 +13,15 @@ def number_of_lines(filename=""):
     Args:
         filename (str): content of the file. Defaults to "".
     """
-    with open(filename, 'r', encoding='utf-8') as f:
-        return len(f.readlines())
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            return len(f.readlines())
+    except FileNotFoundError:
+        print(f"Error: File '{filename}' not found.")
+        return -1  # Or any other suitable error indicator
+    except PermissionError:
+        print(f"Error: Permission denied for file '{filename}'.")
+        return -1  # Or any other suitable error indicator
+    except Exception as e:
+        print(f"Error: {e}")
+        return -1  # Or any other suitable error indicator
