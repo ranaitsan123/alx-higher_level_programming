@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 7-save_to_json_file.py
+# 7-add_item.py
 # AICHA LAHNITE <halaicha300@gmail.com>
 """Add all arguments to a Python list and save them to a file."""
 import sys
