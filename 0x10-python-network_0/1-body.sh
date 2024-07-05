@@ -1,3 +1,3 @@
 #!/bin/bash
-curl -sL -w "%{http_code}" "$1" | awk '/200$/ {p=1} p'
-echo "Route 2"
+#hi
+curl -s -o /dev/null -w "%{http_code}\n" "$1" | grep 200 && curl -s "$1"
