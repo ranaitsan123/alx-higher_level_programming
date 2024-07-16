@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-// Import the list from 100-data.js
-const { list } = require('./100-data.js');
+// Import the list from a file (e.g., data_0.js)
+const { list } = require('./data_0.js'); // Adjust this to the correct filename if necessary
 
 // Compute the new list using map
 const newList = list.map((value, index) => value * index);
